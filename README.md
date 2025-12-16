@@ -1,6 +1,6 @@
 To reproduce:
 
-`./.gradle`
+`./gradlew`
 
 
 ```
