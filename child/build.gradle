@@ -1,0 +1,7 @@
+def provider = providers.provider { 
+    project.findProperty("foo")
+}
+
+(1..5000).each {
+    provider.getOrNull()
+}

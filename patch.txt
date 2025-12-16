@@ -1,0 +1,68 @@
+Isolated projects is an incubating feature.
+Calculating task graph as no cached configuration is available for tasks: help
+
+> Configure project :
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+
+> Configure project :child
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+
+> Task :help
+
+Welcome to Gradle 9.4.0-20251209133528+0000.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see more detail about a task, run gradle help --task <task>
+
+To see a list of command-line options, run gradle --help
+
+For more detail on using Gradle, see https://docs.gradle.org/9.4.0-20251209133528+0000/userguide/command_line_interface.html
+
+For troubleshooting, visit https://help.gradle.org
+
+[Incubating] Problems report is available at: file:///Users/rafael/sources/repros/duplicated-problems/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/Users/rafael/sources/repros/duplicated-problems/child/build.gradle' line: 2
+
+* What went wrong:
+Configuration cache problems found in this build.
+
+10 problems were found storing the configuration cache, 1 of which seems unique.
+- Build file 'child/build.gradle': line 2: Project ':child' cannot dynamically look up a property in the parent project ':'
+
+See the complete report at file:///Users/rafael/sources/repros/duplicated-problems/build/reports/configuration-cache/85f6yrajksr7qj1prrcyue80c/qozkgk3tmyh8s1uwmvxwrdfe/configuration-cache-report.html
+> Project ':child' cannot dynamically look up a property in the parent project ':'
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 429ms
+1 actionable task: 1 executed
+Configuration cache entry discarded with 10 problems.
